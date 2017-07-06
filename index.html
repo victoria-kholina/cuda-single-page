@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Cuba Single Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/cuda.css">
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/cuda.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+               <div class="row">
+                   <div class="col-xs-12 col-sm-3"><img src="images/logo.png" class="logo" alt="logo"></div>
+                   <div class="col-xs-12 col-sm-9 menu">
+                    <button class="dropdown-toggle btn btn-orange hidden" type="button" data-toggle="dropdown">MENU <span class="caret"></span></button>
+                       <nav class="navbar-right">
+                            <ul role="menu">
+                            <li class="active"><a href = "#">HOME</a></li>
+                            <li><a href = "#">ABOUT</a></li>
+                            <li><a href = "#">WORK</a></li>
+                            <li><a href = "#">BLOG</a></li>
+                            <li><a href = "#">CONTACT</a></li>
+                            </ul>
+                       </nav>
+                   </div>
+               </div>
+            </div>
+        </header>
+        
+        <!--overlay-->
+        <div class="modal fade" id="overlay" tabindex="-1" role="dialog" aria-labelledby="overlayLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="overlayLabel">WORK WITH US</h4>
+            </div>
+                
+            <div class="modal-body text-center">
+                <form method="post" id="form2">
+                   <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <input type="text" class="form-control modal-form" placeholder="Your Name" required>
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <input type="email" class="form-control modal-form" placeholder="Your Email" required>
+                        <span class="help-block"></span>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <textarea class="form-control modal-form" rows="8" placeholder="Your Message" required></textarea>
+                        <span class="help-block"></span>
+                        <button type="submit" class="btn btn-large btn-blue">SEND MESSAGE</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        <!--welcome-->
+        <section class="welcome">
+            <div class="container text-center">
+               <div class="row">
+                   <div class="col-xs-12">
+                        <h1>Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h1>
+                        <button class="btn btn-large btn-orange" data-toggle="modal" data-target="#overlay" >WORK WITH US!</button>
+                   </div>
+               </div>
+            </div>
+        </section>
+        
+        <!--services-->
+        <section class="services">
+            <div class="container text-center">
+                <h2>SERVICES WE PROVIDE</h2>
+                <hr>
+                <h4>We are working with both individuals and businesses from all over the globe<br>to create awesome websites and applications.</h4>
+                   <div class="row">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/branding.png" alt="brading" >
+                            <h3>BRANDING</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/design.png" alt="design">
+                            <h3>DESIGN</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/development.png" alt="development">
+                            <h3>DEVELOPMENT</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos qui blanditi</p>
+                        </div> 
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="images/rocket.png" alt="rocket">
+                            <h3>ROCKET SCIENCE</h3>
+                            <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!--team-->
+        <section class="team">
+            <div class="container text-center">
+               <h2>MEET OUR BEAUTIFUL TEAM</h2>
+                <hr>
+                <h4>We are a small team of designers and developers, who help brands with big ideas.</h4>
+                   <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="images/people.jpg" class="img-circle" alt="Anne Hathaway">
+                        <h3>ANNE HATHAWAY</h3>
+                        <h5>CEO / Marketing Guru</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                        <div class="social-icons">
+                            <a href="http://www.facebook.com/" target="_blank"><span class="icon icon-fb"></span></a>
+                            <a href="http://twitter.com/" target="_blank"><span class="icon icon-tw"></span></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon icon-in"></span></a>
+                            <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><span class="icon icon-email"></span></a>
+                        </div>
+                        </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="images/people.jpg" class="img-circle" alt="Kate Upton">
+                        <h3>KATE UPTON</h3>
+                        <h5>Creative Director</h5>
+                        <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                        <div class="social-icons">
+                            <a href="http://www.facebook.com/" target="_blank"><span class="icon icon-fb"></span></a>
+                            <a href="http://twitter.com/" target="_blank"><span class="icon icon-tw"></span></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon icon-in"></span></a>
+                            <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><span class="icon icon-email"></span></a>
+                        </div>
+                        </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="images/people.jpg" class="img-circle" alt="Olivia Wilde">
+                        <h3>OLIVIA WILDE</h3>
+                        <h5>Lead Designer</h5>
+                        <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+                        <div class="social-icons">
+                            <a href="http://www.facebook.com/" target="_blank"><span class="icon icon-fb"></span></a>
+                            <a href="http://twitter.com/" target="_blank"><span class="icon icon-tw"></span></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon icon-in"></span></a>
+                            <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><span class="icon icon-email"></span></a>
+                        </div>
+                        </div> 
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="images/people.jpg" class="img-circle" alt="Ashley Greene">
+                        <h3>ASHLEY GREENE</h3>
+                        <h5>SEO / Developer</h5>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <div class="social-icons">
+                            <a href="http://www.facebook.com/" target="_blank"><span class="icon icon-fb"></span></a>
+                            <a href="http://twitter.com/" target="_blank"><span class="icon icon-tw"></span></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon icon-in"></span></a>
+                            <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><span class="icon icon-email"></span></a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </section>  
+        
+         <!--skills-->
+        <section class="skills">
+            <div class="container text-center">
+               <h2>WE GOT SKILLS!</h2>
+                <hr>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua.</h4>
+                   <div class="row">
+                    <div class="col-xs-12 col-sm-3"><img src="images/90.png" alt="90%"><h3>WEB DESIGN</h3></div>
+                    <div class="col-xs-12 col-sm-3"><img src="images/75.png" alt="75%"><h3>HTML/CSS</h3></div>
+                    <div class="col-xs-12 col-sm-3"><img src="images/70.png" alt="70%"><h3>GRAPHIC DESIGN</h3></div> 
+                    <div class="col-xs-12 col-sm-3"><img src="images/85.png" alt="85%"><h3>UI/UX</h3></div>
+                    </div>
+                </div>
+                
+        </section>  
+        
+        <!--portfolio-->
+        <section class="portfolio">
+            <div class="container text-center">
+               <h2>OUR PORTFOLIO</h2>
+                <hr>
+                <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br>consectetur, adipisci velit, sed quia non numquam</h4>
+                <div class="portfolio-menu">
+                    <ul>
+                        <li><a href = "#"><h4>ALL</h4></a></li>
+                        <li><a href = "#"><h4>WEB</h4></a></li>
+                        <li><a href = "#"><h4>APPS</h4></a></li>
+                        <li><a href = "#"><h4>ICONS</h4></a></li>
+                    </ul>
+                  </div>
+                   <div class="row">
+                    <div class="col-xs-12 col-sm-6"><img src="images/mock_up.png" alt="mock_up"><h4>ISOMETRIC PERSPECTIVE MOCK-UP</h4></div>
+                    <div class="col-xs-12 col-sm-6"><img src="images/time_zone.png" alt="time_zone"><h4>TIME ZONE APP UI</h4></div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 col-sm-6"><img src="images/viro_media.png" alt="viro_media"><h4>VIRO MEDIA PLAYERS UI</h4></div> 
+                    <div class="col-xs-12 col-sm-6"><img src="images/blog.png" alt="blog"><h4>BLOG / MAGAZINE FLAT UI KIT</h4></div>
+                    </div>
+                    <button class="btn btn-large btn-green">LOAD MORE PROJECTS</button>
+                    
+            </div>
+        </section>
+        
+        <!--People say-->
+        <section class="people-say">
+            <div class="container text-center">
+               <h2>WHAT PEOPLE SAY ABOUT US</h2>
+                <hr>
+                <h4>Our clients love us!</h4>
+                <div class="row clients">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-3"><img src="images/people.jpg" alt="Chanel Iman" class="img-circle"></div>
+                            <div class="col-xs-9 text-left">
+                                <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                                <h3>CHANEL IMAN</h3>
+                                <h5>CEO of Pinterest </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-3"><img src="images/people.jpg" alt="Adriana Lima" class="img-circle"></div> 
+                            <div class="col-xs-9 text-left">
+                                <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                <h3>ADRIANA LIMA</h3>
+                                <h5>Founder of Instagram</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clients">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-3"><img src="images/people.jpg" alt="Anne Hathaway" class="img-circle"></div>
+                            <div class="col-xs-9 text-left">
+                                <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                <h3>ANNE HATHAWAY</h3>
+                                <h5>Lead Designer at Behance </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-3"><img src="images/people.jpg" alt="Emma Stone" class="img-circle"></div> 
+                            <div class="col-xs-9 text-left">
+                                <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+                                <h3>EMMA STONE</h3>
+                                <h5>Co-Founder of Shazam</h5>
+                            </div>    
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        
+        <!--Get in touch-->
+        <section class="get-in-touch">
+            <div class="container text-center">
+               <h2>GET IN TOUCH</h2>
+                <hr>
+                <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
+                <form method="post" id="form1">
+                   <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" class="form-control footer-form" placeholder="Your Name" required>
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="email" class="form-control footer-form" placeholder="Your Email" required>
+                        <span class="help-block"></span>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <textarea class="form-control footer-form" rows="8" placeholder="Your Message" required></textarea>
+                        <span class="help-block"></span>
+                        <button type="submit" class="btn btn-large btn-blue">SEND MESSAGE</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-12 footer-social">
+                <ul>
+                    <li><a href = "http://www.facebook.com/">Facebook</a></li>
+                    <li><a href = "http://twitter.com/">Twitter</a></li>
+                    <li><a href = "https://plus.google.com/">Google+</a></li>
+                    <li><a href = "https://www.linkedin.com/">LinkedIn</a></li>
+                    <li><a href = "https://www.behance.net/">Behance</a></li>
+                    <li><a href = "https://dribbble.com/">Dribbble</a></li>
+                    <li><a href = "https://github.com/">GitHub</a></li>
+                 </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
