@@ -1,5 +1,8 @@
 jQuery(document).ready(function(){
     
+$(window).resize(getMenu); 
+    getMenu();  
+    
 function getMenu(){
     var winWidth = $(window).width();
      if(winWidth<='768'){ 
@@ -12,8 +15,6 @@ function getMenu(){
         $('.menu ul').removeClass("dropdown-menu");     
     };
     };
-$(window).load(getMenu);     
-$(window).resize(getMenu); 
         
 });//end jQuery
                     

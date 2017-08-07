@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
+
 
 /* RESET STYLES */
 
@@ -96,7 +96,7 @@ header, section {
 
 footer {
     background: #344b8e;
-    padding: 40px 0;
+    padding: 35px 0;
 	margin: 0;
 }
 
@@ -104,10 +104,6 @@ section {
 	padding: 100px 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /*p, h1, h2, h3, h4 {
     padding: 0 20px;
@@ -122,20 +118,22 @@ h1, h2, h3 {
 h1 {
 	font-size: 42px;
     line-height: 1.2;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 h2 {
     font-size: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    margin-top: 5px;
 }
 
 h3 {
-	font-size: 24px;	
+	font-size: 24px;
 }
 
 h4 {
     font-size: 18px;
+    word-spacing: 2px;
 }
 
 h5 {
@@ -153,6 +151,7 @@ hr {
     border: 0px none;
     height: 4px;
     width: 87px;
+    margin-top: 8px;
 }
 
 .content {
@@ -164,8 +163,10 @@ hr {
 /* MENU & LINK STYLES*/
 
 .navbar-right{
-    margin-right: 20px;
+    margin-right: 0;
+    float: right;
 }
+
 
 li {
     display: inline-block;
@@ -181,10 +182,17 @@ li {
     color: #fff;
 }
 
-.menu li,
+.menu li {
+    padding: 5px 20px;
+}
+
 .footer-social li,
-.portfolio-menu li{
-    padding: 8px 20px;
+.portfolio-menu li {
+    padding: 5px 20px;
+}
+
+.footer-social li {
+    margin-left: 15px;
 }
 
 .menu a,
@@ -270,6 +278,14 @@ li {
     box-shadow: 0px 4px 0px 0px #14a58c;
 }
 
+.portfolio .btn-green {
+    margin-top: 40px;
+}
+
+.get-in-touch .btn-blue {
+    margin-top: 50px;
+}
+
 .btn-blue, .btn-blue:active {
     background: #30bae7;
     box-shadow: 0px 4px 0px 0px #299ec5;
@@ -280,9 +296,12 @@ li {
 }
 
 header .container {
-	padding: 55px 25px 10px;
+	padding: 60px 25px 5px;
 }
 
+.row {
+    padding: 0 20px;
+}
 
 header, footer, 
 .welcome,
@@ -293,7 +312,7 @@ header, footer,
 }
 
 .logo {
-	margin-left: 50px;	
+	margin-left: 30px;	
 }
 
 .team, .skills {
@@ -312,22 +331,31 @@ header,
 .team {
     background: #e7f1f8;
 }
+/*
+
+.team h2, 
+.skills h2,
+.portfolio h2,
+.people-say h2 {
+    margin-top: 5px;
+}
+*/
 
 .team h5 {
     color: #30bae7;
 }
 
 .team img {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 200px;
     height: 200px;
 }
 
 .services  .row {
-	margin-top: 45px;
+	margin-top: 30px;
 }
 
-.team .row{
+.team .row {
 	margin-top: 80px;
 	margin-bottom: 15px;
 }
@@ -339,22 +367,23 @@ header,
 
 .team p,
 .services p {
-    margin: 15px 25px;
+    margin: 10px 25px 30px;
 	font-weight: 300;
 }
 
 .team p {
-	padding-top: 5px;
+	padding-top: 10px;
 	line-height: 1.5;
 }
 
 .social-icons {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .icon {
     width: 33px;
     height: 32px;
+    margin-left: 8px;
     display: inline-block;
     white-space: nowrap;
     background-image: url("../images/icons.png");
@@ -383,11 +412,11 @@ header,
 .portfolio {
     background: #ffdd99;
     color: #393939;
-	padding-bottom: 65px;
+	padding-bottom: 60px;
 }
 
 .portfolio img+h4 {
-	padding: 30px;
+	padding: 20px 0 40px;
 }
 
 .people-say {
@@ -400,21 +429,25 @@ header,
 }
 
 .clients {
-    margin-top: 70px;
+    margin-top: 65px;
 }
 
 .clients:last-child {
-    padding-top: 60px;
+    padding: 80px 0 25px;
 }
 
 .people-say p {
 	font-size: 21px;
     font-style: italic;
-	padding-bottom: 30px;
+}
+
+.people-say h3 {
+    margin-top: 30px
 }
 
 .get-in-touch {
     background: #3c5499;
+    padding-bottom: 65px;
 }
 
 .get-in-touch form {
@@ -433,24 +466,41 @@ header,
 
 .form-control {
     height: 55px;
-    padding: 10px 20px;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: #fff;
 }
 
 .modal-form {
     border: 1px solid #30bae7;
     color: #000;
 }
+
 .footer-form {
     background: #273a71;
     color: #fff;
     border: none;
 }
 
-.footer-form::-webkit-input-placeholder {color: #fff;}
+textarea.form-control {
+    margin-top: 15px;
+    height: 200px;
+    resize: none;
+}
+
+.footer-form::-webkit-input-placeholder {color: #fff; }
 .footer-form::-moz-placeholder {color: #fff;}
 .footer-form:-moz-placeholder {color: #fff;}
 .footer-form:-ms-input-placeholder {color: #fff;}
 
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder {color: transparent;}
+:focus:-moz-placeholder {color: transparent;}
+:focus:-ms-input-placeholder {color: transparent;}
+
+.navbar-right .dropdown-menu {
+        right: 8px;
+    }
 
 /*MEDIA QUERIES & DEVICE STYLES*/
 
@@ -462,6 +512,11 @@ header,
     p {
         padding: 0;
     }
+    
+    .row {
+        padding: 0;
+    }
+    
 }
 
 @media only screen and (max-width: 1170px) { 
@@ -470,13 +525,48 @@ header,
         font-size: 14px;
     }
     
+    
+    img, .team img, .people-say img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo {
+        width: 117px;
+    }
+    
+    .team img, .people-say img {
+        max-width: 200px;
+    }
+    
+    img {
+        max-width: 300px;
+    }
+    
+    .team p, .services p {
+        margin: 0;
+    }
+    
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 990px) {
     
     h1 {
         padding-top: 50px;
-        font-size: 2em;
+        font-size: 2.5em;
+    }
+    
+    .clients:last-child {
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .clients .row {
+        margin-bottom: 20px;
+    }
+    
+    .clients .text-left {
+        padding-top: 10px;
     }
 
 }
@@ -488,13 +578,9 @@ header,
         font-size: 18px;
     }
     
-    h2 {
-        font-size: 1em;
-        padding: 0 5px;
-    }
-    
     .portfolio-menu li{
         padding: 5px;
+        margin: 5px;
     }
     
     .menu {
@@ -523,6 +609,10 @@ header,
         padding: 10px 50px;
     }
     
+    .clients .text-left {
+        text-align: center;
+    }
+    
     .form-control {
         margin-top: 10px;
     }
@@ -536,4 +626,38 @@ header,
         margin: 20px auto 50px;
     }
          
+}
+
+@media only screen and (max-width: 460px) {
+    section {
+        padding: 50px 0;
+    }
+    
+    h1 {
+        padding-top: 0;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .logo {
+        margin-left: 0;
+    }
+    
+    .btn-large {
+        width: 200px;
+        height: 50px;
+        padding: 10px 10px;
+        margin: 30px 10px;
+    }
+    
+    .clients {
+      margin-top: 30px;
+    }
+    
+    .get-in-touch form {
+        padding-top: 10px;
+    }
 }
