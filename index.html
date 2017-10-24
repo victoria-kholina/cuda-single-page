@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/cuda.css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/cuda.js"></script>
     </head>
     <body>
@@ -43,21 +45,18 @@
             </div>
                 
             <div class="modal-body text-center">
-                <form method="post" id="form2">
+                <form action="" method="post" id="form1">
                    <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <input type="text" class="form-control modal-form" placeholder="Your Name" required>
-                        <span class="help-block"></span>
+                        <input type="text" name="name" class="form-control modal-form" placeholder="Your Name" required>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <input type="email" class="form-control modal-form" placeholder="Your Email" required>
-                        <span class="help-block"></span>
+                        <input type="email" name="mail" class="form-control modal-form" placeholder="Your Email" required>
                     </div>
                     </div>
                     <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <textarea class="form-control modal-form" rows="8" placeholder="Your Message" required></textarea>
-                        <span class="help-block"></span>
+                        <textarea name="message" class="form-control modal-form" rows="8" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn-large btn-blue">SEND MESSAGE</button>
                     </div>
                     </div>
@@ -72,8 +71,9 @@
         <section class="welcome">
             <div class="container text-center">
                <div class="row">
-                   <div class="col-xs-12">
-                        <h1>Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h1>
+                        <div id="typed-strings"><h1>Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h1></div>
+                        <div class="typed-area col-xs-12"><span id="typed"></span></div>
+                        <div class="col-xs-12">
                         <button class="btn btn-large btn-orange" data-toggle="modal" data-target="#overlay" >WORK WITH US!</button>
                    </div>
                </div>
@@ -119,7 +119,7 @@
                 <h4>We are a small team of designers and developers, who help brands with big ideas.</h4>
                    <div class="row">
                     <div class="col-xs-12 col-sm-3">
-                        <img src="images/people.jpg" class="img-circle" alt="Anne Hathaway">
+                        <img src="images/Ann.png" class="img-circle" alt="Anne Hathaway">
                         <h3>ANNE HATHAWAY</h3>
                         <h5>CEO / Marketing Guru</h5>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
@@ -131,7 +131,7 @@
                         </div>
                         </div>
                     <div class="col-xs-12 col-sm-3">
-                        <img src="images/people.jpg" class="img-circle" alt="Kate Upton">
+                        <img src="images/Kate.jpg" class="img-circle" alt="Kate Upton">
                         <h3>KATE UPTON</h3>
                         <h5>Creative Director</h5>
                         <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
@@ -142,7 +142,7 @@
                         </div>
                         </div>
                     <div class="col-xs-12 col-sm-3">
-                        <img src="images/people.jpg" class="img-circle" alt="Olivia Wilde">
+                        <img src="images/Olivia.jpg" class="img-circle" alt="Olivia Wilde">
                         <h3>OLIVIA WILDE</h3>
                         <h5>Lead Designer</h5>
                         <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
@@ -154,7 +154,7 @@
                         </div>
                         </div> 
                     <div class="col-xs-12 col-sm-3">
-                        <img src="images/people.jpg" class="img-circle" alt="Ashley Greene">
+                        <img src="images/Ashley.png" class="img-circle" alt="Ashley Greene">
                         <h3>ASHLEY GREENE</h3>
                         <h5>SEO / Developer</h5>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
@@ -220,7 +220,7 @@
                 <div class="row clients">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3"><img src="images/people.jpg" alt="Chanel Iman" class="img-circle"></div>
+                            <div class="col-xs-12 col-sm-3"><img src="images/Chanel.jpg" alt="Chanel Iman" class="img-circle"></div>
                             <div class="col-xs-12 col-sm-9 text-left">
                                 <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
                                 <h3>CHANEL IMAN</h3>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3"><img src="images/people.jpg" alt="Adriana Lima" class="img-circle"></div> 
+                            <div class="col-xs-12 col-sm-3"><img src="images/Adriana.jpg" alt="Adriana Lima" class="img-circle"></div> 
                             <div class="col-xs-12 col-sm-9 text-left">
                                 <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
                                 <h3>ADRIANA LIMA</h3>
@@ -243,7 +243,7 @@
                 <div class="row clients">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3"><img src="images/people.jpg" alt="Anne Hathaway" class="img-circle"></div>
+                            <div class="col-xs-12 col-sm-3"><img src="images/Ann.png" alt="Anne Hathaway" class="img-circle"></div>
                             <div class="col-xs-12 col-sm-9 text-left">
                                 <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
                                 <h3>ANNE HATHAWAY</h3>
@@ -253,7 +253,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-3"><img src="images/people.jpg" alt="Emma Stone" class="img-circle"></div> 
+                            <div class="col-xs-12 col-sm-3"><img src="images/Emma.png" alt="Emma Stone" class="img-circle"></div> 
                             <div class="col-xs-12 col-sm-9 text-left">
                                 <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
                                 <h3>EMMA STONE</h3>
@@ -271,20 +271,20 @@
                <h2>GET IN TOUCH</h2>
                 <hr>
                 <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
-                <form method="post" id="form1">
+                <form action="" method="post" id="form2">
                    <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <input type="text" class="form-control footer-form" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control footer-form" placeholder="Your Name" required>
                         <span class="help-block"></span>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        <input type="email" class="form-control footer-form" placeholder="Your Email" required>
+                        <input type="email" name="mail" class="form-control footer-form" placeholder="Your Email" required>
                         <span class="help-block"></span>
                     </div>
                     </div>
                     <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                        <textarea class="form-control footer-form" rows="8" placeholder="Your Message" required></textarea>
+                        <textarea name="message" class="form-control footer-form" rows="8" placeholder="Your Message"></textarea>
                         <span class="help-block"></span>
                         <button type="submit" class="btn btn-large btn-blue">SEND MESSAGE</button>
                     </div>
@@ -310,6 +310,5 @@
             </div>
             </div>
         </footer>
-        
     </body>
 </html>
