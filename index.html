@@ -5,14 +5,10 @@
         <title>Cuda Single Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/cuda.css">
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/cuda.js"></script>
+       
     </head>
     <body>
         <header>
@@ -45,7 +41,7 @@
             </div>
                 
             <div class="modal-body text-center">
-                <form action="" method="post" id="form1">
+                <form method="post" id="form1">
                    <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <input type="text" name="name" class="form-control modal-form" placeholder="Your Name" required>
@@ -175,10 +171,29 @@
                 <hr>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua.</h4>
                    <div class="row">
-                    <div class="col-xs-12 col-sm-3"><img src="images/90.png" alt="90%"><h3>WEB DESIGN</h3></div>
-                    <div class="col-xs-12 col-sm-3"><img src="images/75.png" alt="75%"><h3>HTML/CSS</h3></div>
-                    <div class="col-xs-12 col-sm-3"><img src="images/70.png" alt="70%"><h3>GRAPHIC DESIGN</h3></div> 
-                    <div class="col-xs-12 col-sm-3"><img src="images/85.png" alt="85%"><h3>UI/UX</h3></div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="circle circle-blue">
+                        <div class="circle-text">90<span class="per">%</span></div>
+                        </div>
+                        <h3>WEB DESIGN</h3>
+                        </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="circle circle-pink">
+                        <div class="circle-text">75<span class="per">%</span></div>
+                        
+                        <div class="circle-text"></div>
+                        </div>
+                        <h3>HTML/CSS</h3></div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="circle circle-green">
+                        <div class="circle-text">70<span class="per">%</span></div>
+                        </div>
+                        <h3>GRAPHIC DESIGN</h3></div> 
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="circle circle-orange">
+                        <div class="circle-text">85<span class="per">%</span></div>
+                        </div>
+                        <h3>UI/UX</h3></div>
                     </div>
                 </div>
                 
@@ -192,19 +207,48 @@
                 <h4>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br>consectetur, adipisci velit, sed quia non numquam</h4>
                 <div class="portfolio-menu">
                     <ul>
-                        <li><a href = "#"><h4>ALL</h4></a></li>
-                        <li><a href = "#"><h4>WEB</h4></a></li>
-                        <li><a href = "#"><h4>APPS</h4></a></li>
-                        <li><a href = "#"><h4>ICONS</h4></a></li>
+                        <li class="active"><a data-toggle="tab" href="#all"><h4>ALL</h4></a></li>
+                        <li><a data-toggle="tab" href="#web"><h4>WEB</h4></a></li>
+                        <li><a data-toggle="tab" href="#apps"><h4>APPS</h4></a></li>
+                        <li><a data-toggle="tab" href="#icons"><h4>ICONS</h4></a></li>
                     </ul>
                   </div>
-                   <div class="row">
-                    <div class="col-xs-12 col-sm-6"><img src="images/mock_up.png" alt="mock_up"><h4>ISOMETRIC PERSPECTIVE MOCK-UP</h4></div>
-                    <div class="col-xs-12 col-sm-6"><img src="images/time_zone.png" alt="time_zone"><h4>TIME ZONE APP UI</h4></div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs-12 col-sm-6"><img src="images/viro_media.png" alt="viro_media"><h4>VIRO MEDIA PLAYERS UI</h4></div> 
-                    <div class="col-xs-12 col-sm-6"><img src="images/blog.png" alt="blog"><h4>BLOG / MAGAZINE FLAT UI KIT</h4></div>
+                  <div class="tab-content">
+                   
+                    <div id="all" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/mock_up.png" alt="mock_up"><h4>ISOMETRIC PERSPECTIVE MOCK-UP</h4></div>
+                            <div class="col-xs-12 col-sm-6"><img src="images/time_zone.png" alt="time_zone"><h4>TIME ZONE APP UI</h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/viro_media.png" alt="viro_media"><h4>VIRO MEDIA PLAYERS UI</h4></div> 
+                            <div class="col-xs-12 col-sm-6"><img src="images/blog.png" alt="blog"><h4>BLOG / MAGAZINE FLAT UI KIT</h4></div>
+                        </div>
+                      </div>
+                      
+                      <div id="web" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/time_zone.png" alt="time_zone"><h4>TIME ZONE APP UI</h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/mock_up.png" alt="mock_up"><h4>ISOMETRIC PERSPECTIVE MOCK-UP</h4></div>
+                            <div class="col-xs-12 col-sm-6"><img src="images/blog.png" alt="blog"><h4>BLOG / MAGAZINE FLAT UI KIT</h4></div>
+                        </div>
+                      </div>
+                      
+                      <div id="apps" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/viro_media.png" alt="viro_media"><h4>VIRO MEDIA PLAYERS UI</h4></div> 
+                            <div class="col-xs-12 col-sm-6"><img src="images/time_zone.png" alt="time_zone"><h4>TIME ZONE APP UI</h4></div>
+                        </div>
+                      </div>
+                      
+                      <div id="icons" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6"><img src="images/mock_up.png" alt="mock_up"><h4>ISOMETRIC PERSPECTIVE MOCK-UP</h4></div>
+                        </div>
+                      </div>
+                      
                     </div>
                     <button class="btn btn-large btn-green">LOAD MORE PROJECTS</button>
                     
@@ -271,7 +315,7 @@
                <h2>GET IN TOUCH</h2>
                 <hr>
                 <h4>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</h4>
-                <form action="" method="post" id="form2">
+                <form method="post" id="form2">
                    <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <input type="text" name="name" class="form-control footer-form" placeholder="Your Name" required>
@@ -310,5 +354,13 @@
             </div>
             </div>
         </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>    
+        <script src="js/jquery.validate.min.js"></script>         
+        <script src="js/typed.min.js"></script> 
+        <script src="js/jquery.appear.js"></script> 
+        <script src="js/circle-progress.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+        <script src="js/cuda.js"></script>
     </body>
 </html>

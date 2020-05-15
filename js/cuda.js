@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
     
 $(window).resize(getMenu); 
-    getMenu();  
-    
+    getMenu(); 
+
 function getMenu(){
     var winWidth = $(window).width();
      if(winWidth<='768'){ 
@@ -25,7 +25,40 @@ var typed = new Typed('#typed', {
 	contentType: "html"
     //onComplete: function(){ $('.typed-cursor').css('display','none'); }
   });
+    
+var circle = $('.circle');
+    inited = false;
 
+circle.appear({ force_process: true });
+
+circle.on('appear', function() {
+  if (!inited) {
+    circle.circleProgress({
+        startAngle: -Math.PI / 4 * 2,
+        thickness: 15,
+        size: 160
+    });
+
+    $('.circle-blue').circleProgress({ 
+        value: 0.90,
+        fill: { color: "#30bae7"}
+    });
+    $('.circle-pink').circleProgress({ 
+        value: 0.75,
+        fill: { color: "#d74680"} 
+    });
+    $('.circle-green').circleProgress({
+        value: 0.70,
+        fill: { color: "#15c7a8"} 
+    });
+    $('.circle-orange').circleProgress({ 
+        value: 0.85,
+        fill: { color: "#eb7d4b"}
+    });
+    inited = true;
+  }
+});
+                       
 $('form').each(function() { 
     $(this).validate({
     rules: {
@@ -48,5 +81,4 @@ $('form').each(function() {
 
     
 });//end jQuery
-                    
                     
